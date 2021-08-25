@@ -12,7 +12,6 @@ start_text = """
 Hello [{}](tg://user?id={}),
 
 \n\nI'm Katarina's Song Bot.
-
 Send the name of the song.
 𝐄𝐠. ```/song Faded```
 """
@@ -33,9 +32,9 @@ async def start(client, message):
     name = message.from_user["first_name"]
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup(
-           [[InlineKeyboardButton(text="Support", url="http://t.me/ppanaravxt_bot"),
+           [[InlineKeyboardButton(text="Support", url="http://t.me/ppnaravxt_bot"),
              InlineKeyboardButton(
-                        text="Add me to your group!", url="http://t.me/KatarinsSongBot?startgroup=true"
+                        text="Add me to your group.", url="http://t.me/KatarinaSongBot?"
                     )
                 ]
             ]
